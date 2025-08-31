@@ -1,8 +1,15 @@
 import styles from "./AnimationImage.module.css";
-import { useSpring, animated, config } from "react-spring";
+import { useSpring, animated } from "react-spring";
 import blobshape from "blobshape";
 import { useState } from "react";
+import type { CSSProperties } from "react";
 import foto_perfil from "../assets/imagenes/foto-personal.jpeg";
+
+interface BlobProps {
+  image?: boolean;
+  color?: string;
+  style?: CSSProperties;
+}
 
 export default function AnimationImage() {
   return (
@@ -42,19 +49,19 @@ function getRandomPath() {
   }).path;
 }
 
-function Blob(props) {
+function Blob(props: BlobProps) {
   const [flip, set] = useState(false);
 
-  const { path } = useSpring({
+  const { path } = useSpring<{ path: string }>({
     to: { path: getRandomPath() },
     from: { path: getRandomPath() },
     reverse: flip,
     config: {
       duration: props.image ? 9000 : 6000,
     },
-    onRest: (x) => {
-      x.value.path = getRandomPath();
-      // !props.image &&
+    onRest: (spring) => {
+      // Tipado correcto para spring.value
+      (spring as { value: { path: string } }).value.path = getRandomPath();
       set(!flip);
     },
   });
