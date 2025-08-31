@@ -1,0 +1,61 @@
+{
+  "header": {
+    "sobre": "ABOUT ME",
+    "habilidades": "SKILLS",
+    "proyectos": "PROJECTS",
+    "contacto": "CONTACT"
+  },
+  "presentacion": {
+    "estudiante": "Computer Engineering Student",
+    "desarrollador": "Web Developer",
+    "contacto": "Contact"
+  },
+  "about": {
+    "sobre": "About Me",
+    "texto": "Computer Engineering student with training as a Chemical Technician. Passionate about software development and new technologies, with experience in academic and personal projects. I am a self-taught person who constantly seeks to apply and expand their knowledge. Currently I focus on backend and web development, keeping a continuous learning of new tools and best practices.",
+    "cv": "My CV",
+    "habilidades": "Soft Skills",
+    "trabajo": "Teamwork",
+    "adaptabilidad": "Adaptability",
+    "pensamiento": "Critical thinking",
+    "autodidacta": "Self-taught",
+    "organizacion": "Organization",
+    "gestion": "Time management",
+    "aprendizaje": "Continuous learning",
+    "disciplina": "Discipline",
+    "idiomas": "Languages",
+    "espanol": "Spanish",
+    "ingles": "English"
+  },
+  "skills": {
+    "titulo": "Technical Skills",
+    "lenguajes": "Languages",
+    "frontend": "Frontend Frameworks/Libraries",
+    "backend": "Backend Frameworks/Libraries",
+    "db": "Database",
+    "herramientas": "Tools",
+    "aprendiendo": "Learning..."
+  },
+  "proyectos": {
+    "titulo": "Projects",
+    "bairescandybox": "E-commerce page of souvenirs for children's events. It has a login and registration system, an administration panel only for those users who have administrator role, which allows you to add, edit and delete products. It also has the integration of Mercado Pago API as a payment gateway.",
+    "tucasaonline": "Real estate classifieds website made with HTML5, CSS3 and JavaScript for the frontend, Flask for the backend and SQLite as database. It allows users to search and publish properties. It has an advanced search engine and OpenStreetMap API integration for easy property location.",
+    "portfolio": "This site is my professional web portfolio, developed with React and Tailwind CSS. Here I present information about my profile, links to social networks, access to my CV, a summary of my technical skills and a section of my featured projects and work done.",
+    "mis_proyectos": "MY PROJECTS"
+  },
+  "all_projects": {
+    "titulo": "My Projects",
+    "remodelacion": "Real estate classifieds website made with HTML5, CSS3 and JavaScript for the frontend, Flask for the backend and SQLite as database. It allows users to search and publish properties. It has an advanced search engine and OpenStreetMap API integration for easy property location.",
+    "subway": "Web project that replicates the official Subway Argentina website, developed with HTML5, CSS3 and JavaScript. The site includes an interactive product menu, promotions section and a Subway branch locator in the Autonomous City of Buenos Aires, using the OpenStreetMap API integration.",
+    "spotify": "Web project that simulates the Spotify homepage, showing artists, albums and featured songs. Developed with HTML5, CSS3 and JavaScript, and along with the integration of the Spotify API that allows you to click on one of the visible artists or albums to listen to their most popular songs.",
+    "blog": "Informative blog about the technological trends of 2025, one of my first web projects, developed with HTML, CSS and JavaScript. The site is fully responsive and presents articles about innovations, advances and news from the technology sector. Its simple and functional design allows a comfortable navigation from any device.",
+    "inicio": "Home"
+  },
+  "contacto": {
+    "titulo": "Contact",
+    "contactar": "Contact me"
+  },
+  "footer": {
+    "texto": "2025 Gaston Laginestra. All rights reserved."
+  }
+}

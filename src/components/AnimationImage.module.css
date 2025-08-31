@@ -1,0 +1,16 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width: 80em;
+}
+
+.imagen {
+  object-fit: contain;
+  object-position: top;
+  align-self: flex-end;
+}
+
+.estilo {
+  margin-top: -12em;
+  margin-left: 5em;
+}

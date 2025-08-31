@@ -1,0 +1,61 @@
+{
+  "header": {
+    "sobre": "SOBRE MI",
+    "habilidades": "HABILIDADES",
+    "proyectos": "PROYECTOS",
+    "contacto": "CONTACTO"
+  },
+  "presentacion": {
+    "estudiante": "Estudiante de Ingeniería en Informática",
+    "desarrollador": "Desarrollador Web",
+    "contacto": "Contacto"
+  },
+  "about": {
+    "sobre": "Sobre Mi",
+    "texto": "Estudiante de Ingeniería en Informática con formación como Técnico Químico. Apasionado por el desarrollo de software y las nuevas tecnologías, con experiencia en proyectos académicos y personales. Soy una persona autodidacta que busca constantemente aplicar y ampliar sus conocimientos. Actualmente me enfoco en el backend y el desarrollo web, manteniendo un aprendizaje continuo de nuevas herramientas y buenas prácticas.",
+    "cv": "Ver CV",
+    "habilidades": "Habilidades Blandas",
+    "trabajo": "Trabajo en equipo",
+    "adaptabilidad": "Adaptabilidad",
+    "pensamiento": "Pensamiento crítico",
+    "autodidacta": "Autodidacta",
+    "organizacion": "Organización",
+    "gestion": "Gestión del tiempo",
+    "aprendizaje": "Aprendizaje continuo",
+    "disciplina": "Disciplina",
+    "idiomas": "Idiomas",
+    "espanol": "Español",
+    "ingles": "Inglés"
+  },
+  "skills": {
+    "titulo": "Habilidades Técnicas",
+    "lenguajes": "Lenguajes",
+    "frontend": "Frameworks/Librerías Frontend",
+    "backend": "Frameworks/Librerías Backend",
+    "db": "Base de Datos",
+    "herramientas": "Herramientas",
+    "aprendiendo": "Aprendiendo..."
+  },
+  "proyectos": {
+    "titulo": "Proyectos",
+    "bairescandybox": "Página e-commerce de suvenires para eventos infantiles. Cuenta con un sistema de inicio y registro de sesión, un panel de administración únicamente para aquellos usuarios que tengan rol administrador, el cual permite agregar, editar y eliminar productos. Además cuenta con la integración de la API de Mercado Pago como pasarela de pagos.",
+    "tucasaonline": "Web de clasificados inmobiliarios hecho con HTML5, CSS3 y JavaScript para el frontend, Flask para el backend y SQLite como base de datos. Permite a los usuarios buscar y publicar propiedades. Cuenta con un buscador avanzado y con la integración de OpenStreetMap API para facilitar la localización de las propiedades.",
+    "portfolio": "Este sitio es mi portfolio web profesional, desarrollado con React y Tailwind CSS. Aca presento información sobre mi perfil, enlaces a redes sociales, acceso a mi CV, un resumen de mis habilidades técnicas y una sección de mis proyectos destacados y trabajos realizados.",
+    "mis_proyectos": "MIS PROYECTOS"
+  },
+  "all_projects": {
+    "titulo": "Mis Proyectos",
+    "remodelacion": "Web de clasificados inmobiliarios hecho con HTML5, CSS3 y JavaScript para el frontend, Flask para el backend y SQLite como base de datos. Permite a los usuarios buscar y publicar propiedades. Cuenta con un buscador avanzado y con la integración de OpenStreetMap API para facilitar la localización de las propiedades.",
+    "subway": "Proyecto web que replica la página oficial de Subway Argentina, desarrollado con HTML5, CSS3 y JavaScript. El sitio incluye un menú interactivo de productos, sección de promociones y un localizador de sucursales Subway en la Ciudad Autónoma de Buenos Aires, utilizando la integración de la API de OpenStreetMap.",
+    "spotify": "Proyecto web que simula la página de inicio de Spotify, mostrando los artistas, álbumes y canciones destacadas. Desarrollado con HTML5, CSS3 y JavaScript, y junto con la integración de la API de Spotify que te permite que al hacer click en uno de los artistas o albumes visibles se puedan escuchar sus canciones más populares.",
+    "blog": "Blog informativo sobre las tendencias tecnológicas de 2025, uno de mis primeros proyectos web, desarrollado con HTML, CSS Y JavaScript. El sitio es completamente responsive y presenta artículos sobre innovaciones, avances y noticias del sector tecnológico. Su diseño sencillo y funcional permite una navegación cómoda desde cualquier dispositivo.",
+    "inicio": "Inicio"
+  },
+  "contacto": {
+    "titulo": "Contacto",
+    "contactar": "Contactame"
+  },
+  "footer": {
+    "texto": "2025 Gastón Laginestra. Todos los derechos reservados."
+  }
+}
