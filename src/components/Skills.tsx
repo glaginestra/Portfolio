@@ -1,14 +1,14 @@
 import python from "../assets/imagenes/python.svg";
 import bootstrap from "../assets/imagenes/bootstrap.svg";
 import django from "../assets/imagenes/django.svg";
-// import express from "../assets/imagenes/express.svg";
+import express from "../assets/imagenes/express.svg";
 import figma from "../assets/imagenes/figma.svg";
 import flask from "../assets/imagenes/flask.svg";
 import github from "../assets/imagenes/github.svg";
 import html5 from "../assets/imagenes/html5.svg";
 import javascript from "../assets/imagenes/javascript.svg";
-// import nodedotjs from "../assets/imagenes/nodedotjs.svg";
-import nextdotjs from "../assets/imagenes/nextdotjs.svg";
+import nodedotjs from "../assets/imagenes/nodedotjs.svg";
+// import nextdotjs from "../assets/imagenes/nextdotjs.svg";
 import postgresql from "../assets/imagenes/postgresql.svg";
 import react from "../assets/imagenes/react.svg";
 import sqlalchemy from "../assets/imagenes/sqlalchemy.svg";
@@ -93,13 +93,13 @@ function Skills() {
             <img className="w-[50%] h-[50%]" src={tailwindcss} alt="tailwind" />
             <h2 className="text-[#91dff9] font-bold text-xl">Tailwind CSS</h2>
           </div>
-          <div className="h-full w-[8em] bg-[#051827] border-2 border-[#91dff9] shadow-[0px_0px_10px_skyblue] rounded-xl flex flex-col justify-center items-center transition-all duration-500 hover:scale-105 hover:border-[#f0f4f8] hover:shadow-[0px_0px_10px_white]">
+          {/* <div className="h-full w-[8em] bg-[#051827] border-2 border-[#91dff9] shadow-[0px_0px_10px_skyblue] rounded-xl flex flex-col justify-center items-center transition-all duration-500 hover:scale-105 hover:border-[#f0f4f8] hover:shadow-[0px_0px_10px_white]">
             <img className="w-[50%] h-[50%]" src={nextdotjs} alt="react" />
             <h2 className="text-[#91dff9] font-bold text-xl">Next Js</h2>
             <p className="text-[#c1c1c1] italic text-[13px]">
               {t("skills.aprendiendo")}
             </p>
-          </div>
+          </div> */}
         </div>
         <h2
           className="text-[#f0f4f8] font-bold text-4xl"
@@ -119,7 +119,7 @@ function Skills() {
             <img className="w-[50%] h-[50%]" src={django} alt="django" />
             <h2 className="text-[#91dff9] font-bold text-xl">Django</h2>
           </div>
-          {/* <div className="h-full w-[8em] bg-[#051827] border-2 border-[#91dff9] shadow-[0px_0px_10px_skyblue] rounded-xl flex flex-col justify-center items-center transition-all duration-500 hover:scale-105 hover:border-[#f0f4f8] hover:shadow-[0px_0px_10px_white]">
+          <div className="h-full w-[8em] bg-[#051827] border-2 border-[#91dff9] shadow-[0px_0px_10px_skyblue] rounded-xl flex flex-col justify-center items-center transition-all duration-500 hover:scale-105 hover:border-[#f0f4f8] hover:shadow-[0px_0px_10px_white]">
             <img className="w-[50%] h-[50%]" src={nodedotjs} alt="nodedotjs" />
             <h2 className="text-[#91dff9] font-bold text-xl">Node Js</h2>
             <p className="text-[#c1c1c1] italic text-[13px]">Aprendiendo...</p>
@@ -128,7 +128,7 @@ function Skills() {
             <img className="w-[50%] h-[50%]" src={express} alt="express" />
             <h2 className="text-[#91dff9] font-bold text-xl">Express Js</h2>
             <p className="text-[#c1c1c1] italic text-[13px]">Aprendiendo...</p>
-          </div> */}
+          </div>
         </div>
         <h2
           className="text-[#f0f4f8] font-bold text-4xl"

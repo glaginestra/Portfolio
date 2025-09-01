@@ -251,6 +251,12 @@ function Proyectos() {
             >
               Tailwind CSS
             </div>
+            <div
+              className=" font-semibold text-center rounded-[5px] italic text-[#051827] flex justify-center items-center transition-all duration-500 hover:border-[#f0f4f8] hover:scale-105 bg-[#e2e4e7] shadow-[0px_0px_10px_rgb(0,0,0,0.25)] select-none"
+              style={{ padding: "0.15em 0.72em" }}
+            >
+              TypeScript
+            </div>
           </div>
           <div className=" flex flex-row gap-4">
             <a
