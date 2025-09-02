@@ -122,12 +122,16 @@ function Skills() {
           <div className="h-full w-[8em] bg-[#051827] border-2 border-[#91dff9] shadow-[0px_0px_10px_skyblue] rounded-xl flex flex-col justify-center items-center transition-all duration-500 hover:scale-105 hover:border-[#f0f4f8] hover:shadow-[0px_0px_10px_white]">
             <img className="w-[50%] h-[50%]" src={nodedotjs} alt="nodedotjs" />
             <h2 className="text-[#91dff9] font-bold text-xl">Node Js</h2>
-            <p className="text-[#c1c1c1] italic text-[13px]">Aprendiendo...</p>
+            <p className="text-[#c1c1c1] italic text-[13px]">
+              {t("skills.aprendiendo")}
+            </p>
           </div>
           <div className="h-full w-[8em] bg-[#051827] border-2 border-[#91dff9] shadow-[0px_0px_10px_skyblue] rounded-xl flex flex-col justify-center items-center transition-all duration-500 hover:scale-105 hover:border-[#f0f4f8] hover:shadow-[0px_0px_10px_white]">
             <img className="w-[50%] h-[50%]" src={express} alt="express" />
             <h2 className="text-[#91dff9] font-bold text-xl">Express Js</h2>
-            <p className="text-[#c1c1c1] italic text-[13px]">Aprendiendo...</p>
+            <p className="text-[#c1c1c1] italic text-[13px]">
+              {t("skills.aprendiendo")}
+            </p>
           </div>
         </div>
         <h2
