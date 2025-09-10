@@ -21,8 +21,8 @@ export default function LanguageSwitch() {
       />
       <div
         className=" peer rounded-full outline-none duration-100 after:duration-500 w-18 h-8 md:w-18 md:h-8 lg:w-20 lg:h-10 xl:w-20 xl:h-10 bg-[#00355e] peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-[#f0f4f8]
-        after:absolute after:top-1 after:left-1 after:flex after:justify-center after:items-center after:h-6 after:w-6 md:after:h-6 md:after:w-6 lg:after:h-8 lg:after:w-8 xl:after:h-8 xl:after:w-8 after:rounded-full after:bg-white after:font-bold after:text-lg
-        peer-checked:after:translate-x-10 after:content-['🇪🇸'] peer-checked:after:content-['🇺🇸']"
+        after:absolute after:top-1 after:left-1 after:flex after:justify-center after:items-center after:h-6 after:w-6 md:after:h-6 md:after:w-6 lg:after:h-8 lg:after:w-8 xl:after:h-8 xl:after:w-8 after:rounded-full after:bg-white after:font-bold after:text-[#00355e] after:text-lg
+        peer-checked:after:translate-x-10 after:content-['ES'] peer-checked:after:content-['EN']"
       ></div>
     </label>
   );

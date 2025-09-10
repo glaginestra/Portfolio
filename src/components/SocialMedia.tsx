@@ -18,7 +18,7 @@ function SocialMedia() {
         <FaInstagram size={35} className="text-current"></FaInstagram>
       </a>
       <a
-        href="https://www.linkedin.com/in/gastón-laginestra-713ab0249"
+        href="https://www.linkedin.com/in/gaston-laginestra"
         target="_blank"
         rel="noopener noreferrer"
         className="w-auto h-auto rounded-[7px] shadow-[0px_0px_10px_rgb(255,255,255,0.5)] text-white bg-[#051827] hover:text-white hover:bg-[#0e76a8] hover:scale-105 transition-all duration-500"
