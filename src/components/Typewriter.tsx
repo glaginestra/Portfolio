@@ -25,7 +25,7 @@ export default function Typewriter() {
   }, [t]);
 
   return (
-    <h2 className="font-titillium text-white italic text-3xl mt-0">
+    <h2 className="font-titillium text-white italic text-xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-3xl mt-0">
       <span ref={el}></span>
     </h2>
   );

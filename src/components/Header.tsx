@@ -20,25 +20,35 @@ function Header() {
   }, []);
   return (
     <header
-      className={` top-0 left-0 w-full m-0 h-[10vh] shadow-[0px_0px_15px_white] fixed flex justify-around gap-[400px] z-50 transition-colors duration-300 items-center ${
+      className={` top-0 left-0 w-[100vw] m-0 h-[7vh]  lg:h-[10vh] xl:h-[10vh] shadow-[0px_0px_15px_white] fixed flex justify-around sm:gap-8 md:gap-12 lg:gap-30 xl:gap-80 z-50 transition-colors duration-300 items-center ${
         isScrolled ? "bg-[#051827] text-white" : "bg-white text-[#051827]"
       }`}
       style={{ fontFamily: "Titillium Web" }}
     >
-      <h2 className=" font-bold text-2xl">Gastón Nicolás Laginestra</h2>
-      <div className="flex flex-row gap-[50px]">
-        <ul className="m-0 p-0 flex gap-10 list-none justify-center items-center">
+      <h2 className="hidden font-bold sm:text-2xl lg:block">
+        Gastón Nicolás Laginestra
+      </h2>
+      <div className="flex flex-row gap-4 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-14">
+        <ul className="m-0 p-0 flex gap-4 xl:gap-10 list-none justify-center items-center">
           <a href="#about" className="decoration-0 ">
-            <li className=" font-bold text-xl">{t("header.sobre")}</li>
+            <li className=" font-bold text-xs md:text-xl lg:text-xl xl:text-xl">
+              {t("header.sobre")}
+            </li>
           </a>
           <a href="#habilidades" className="decoration-0">
-            <li className=" font-bold text-xl">{t("header.habilidades")}</li>
+            <li className=" font-bold text-xs md:text-xl lg:text-xl xl:text-xl">
+              {t("header.habilidades")}
+            </li>
           </a>
           <a href="#proyectos" className="decoration-0 ">
-            <li className=" font-bold text-xl">{t("header.proyectos")}</li>
+            <li className=" font-bold text-xs md:text-xl lg:text-xl xl:text-xl">
+              {t("header.proyectos")}
+            </li>
           </a>
           <a href="#contacto" className="decoration-0">
-            <li className=" font-bold text-xl">{t("header.contacto")}</li>
+            <li className=" font-bold text-xs md:text-xl lg:text-xl xl:text-xl">
+              {t("header.contacto")}
+            </li>
           </a>
         </ul>
         <LanguageSwitch />

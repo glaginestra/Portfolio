@@ -1,10 +1,10 @@
 function Separador() {
   return (
-    <div className="-mt-1">
+    <div className=" bg-[#051827]" style={{ marginTop: "-5px" }}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
-        className="w-full h-48 bg-[#051827]"
+        className="w-[100vw] h-48 "
         preserveAspectRatio="none"
       >
         <path

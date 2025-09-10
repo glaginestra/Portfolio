@@ -10,22 +10,32 @@ import { FaGithub } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
-function Proyectos() {
+function BodyProjects() {
   const { t } = useTranslation();
   return (
     <section
-      className="h-[210em] w-full bg-[#f0f4f8] flex flex-col gap-[3em] justify-center itams-center"
-      style={{ padding: "2em 0em", fontFamily: "Titillium Web" }}
+      id="proyectos"
+      className="h-auto w-full bg-[#f0f4f8] flex flex-col gap-[3em] justify-center itams-center"
+      style={{
+        padding: "2em 0em",
+        fontFamily: "Titillium Web",
+        marginTop: "50px",
+      }}
     >
-      <h2
-        className="font-bold text-[#051827] text-5xl text-center"
-        style={{ marginTop: "10vh" }}
-      >
-        {t("all_projects.titulo")}
+      <h2 className="font-bold text-[#051827] text-4xl md:text-5xl lg:text-5xl xl:text-5xl text-center">
+        {t("proyectos.titulo")}
       </h2>
-      <div className=" h-[25em] w-full relative flex-row group">
+      <div className=" h-auto md:h-auto lg:h-[25em] xl:h-[25em] w-full static md:static lg:relative xl:relative flex flex-col md:flex-col group justify-center items-center gap-1 md:gap-0 lg:gap-0 xl:gap-0 border-[#051827] border-2 rounded-[5px] shadow-[0px_0px_15px_rgb(0,0,0,0.3)] md:border-0 md:shadow-[0px_0px_0px_rgb(0,0,0,0.0)] lg:border-0 lg:shadow-[0px_0px_0px_rgb(0,0,0,0.0)]">
+        <div className="w-full h-[60%] md:w-[70%] md:h-[60%] lg:w-[50%] lg:h-[100%] xl:w-[50%] xl:h-[100%] static md:static lg:absolute xl:absolute z-5 md:top-0 md:right-[6em] lg:top-0 lg:right-[6em] xl:top-0 xl:right-[6em] rounded-[5px] overflow-hidden">
+          <img
+            src={img_bairescandybox}
+            alt="Imagen de Proyecto BairesCandyBox"
+            className="w-full h-full object-fit-cover object-center z-3"
+          />
+          <div className="static lg:absolute inset-0 bg-gradient-to-r from-[#051827] to-[#05182720] transition-opacity duration-500 group-hover:opacity-0"></div>
+        </div>
         <div
-          className="bg-[#e2e4e7] w-[45%] h-[82%] flex flex-col justify-around absolute z-10 top-[50%] translate-y-[-50%] left-[18em] rounded-xl shadow-[0px_0px_10px_rgb(0,0,0,0.5)]"
+          className="bg-[#e2e4e700] lg:bg-[#e2e4e7] xl:bg-[#e2e4e7] w-full h-auto md:w-[70%] md:h-auto lg:w-[50%] lg:h-auto xl:w-[45%] xl:h-[82%] flex flex-col justify-around md:static lg:absolute xl:absolute z-10 rounded-xl  lg:top-[50%] lg:translate-y-[-50%] lg:left-[8em] lg:shadow-[0px_0px_10px_rgb(0,0,0,0.5)] xl:top-[50%] xl:translate-y-[-50%] xl:left-[18em] xl:shadow-[0px_0px_10px_rgb(0,0,0,0.5)]"
           style={{ padding: "0.5em 1em" }}
         >
           <h2
@@ -35,7 +45,7 @@ function Proyectos() {
             01 - BairesCandyBox
           </h2>
           <p
-            className=" text-[#051827cd] text-[18px]"
+            className=" text-[#051827cd] text-[18px] text-justify"
             style={{ marginBottom: "8px" }}
           >
             {t("proyectos.bairescandybox")}
@@ -113,19 +123,19 @@ function Proyectos() {
             </a>
           </div>
         </div>
-        <div className="w-[50%] h-[100%] absolute z-5 top-0 right-[6em] rounded-[5px] overflow-hidden">
-          <img
-            src={img_bairescandybox}
-            alt="Imagen de Proyecto BairesCandyBox"
-            className="w-full h-full object-fit-cover object-center z-3"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#051827] to-[#05182720] transition-opacity duration-500 group-hover:opacity-0"></div>
-        </div>
       </div>
 
-      <div className=" h-[25em] w-full relative flex-row group">
+      <div className=" h-auto md:h-auto lg:h-[25em] xl:h-[25em] w-full static md:static lg:relative xl:relative flex flex-col md:flex-col group justify-center items-center gap-1 md:gap-0 lg:gap-0 xl:gap-0 border-[#051827] border-2 rounded-[5px] shadow-[0px_0px_15px_rgb(0,0,0,0.3)] md:border-0 md:shadow-[0px_0px_0px_rgb(0,0,0,0.0)] lg:border-0 lg:shadow-[0px_0px_0px_rgb(0,0,0,0.0)]">
+        <div className="w-full h-[60%] md:w-[70%] md:h-[60%] lg:w-[50%] lg:h-[100%] xl:w-[50%] xl:h-[100%] static md:static lg:absolute xl:absolute z-5 md:top-0 md:left-[6em] lg:top-0 lg:left-[6em] xl:top-0 xl:left-[6em] rounded-[5px] overflow-hidden">
+          <img
+            src={img_tucasaonline}
+            alt="Imagen de Proyecto TuCasaOnline"
+            className="w-full h-full object-fit-cover object-center"
+          />
+          <div className="static lg:absolute inset-0 bg-gradient-to-l from-[#051827] to-[#05182720] transition-opacity duration-500 group-hover:opacity-0"></div>
+        </div>
         <div
-          className="bg-[#e2e4e7] w-[45%] h-[82%] flex flex-col justify-evenly absolute z-10 top-[50%] translate-y-[-50%] right-[18em] rounded-xl shadow-[0px_0px_10px_rgb(0,0,0,0.5)]"
+          className="bg-[#e2e4e700] lg:bg-[#e2e4e7] xl:bg-[#e2e4e7] w-full h-auto md:w-[70%] md:h-auto lg:w-[50%] lg:h-auto xl:w-[45%] xl:h-[82%] flex flex-col justify-around md:static lg:absolute xl:absolute z-10 rounded-xl  lg:top-[50%] lg:translate-y-[-50%] lg:right-[8em] lg:shadow-[0px_0px_10px_rgb(0,0,0,0.5)] xl:top-[50%] xl:translate-y-[-50%] xl:right-[18em] xl:shadow-[0px_0px_10px_rgb(0,0,0,0.5)]"
           style={{ padding: "0.5em 1em" }}
         >
           <h2
@@ -135,7 +145,7 @@ function Proyectos() {
             02 - TuCasaOnline
           </h2>
           <p
-            className=" text-[#051827cd] text-[18px]"
+            className=" text-[#051827cd] text-[18px] text-justify"
             style={{ marginBottom: "8px" }}
           >
             {t("proyectos.tucasaonline")}
@@ -205,7 +215,7 @@ function Proyectos() {
             </a>
 
             <a
-              href="http://"
+              href="https://github.com/glaginestra/TuCasaOnline"
               target="_blank"
               className=" w-9 h-9 flex justify-center text-[#051827] self-center items-center hover:shadow-[0px_0px_10px_rgb(0,0,0,0.25)] transition-all rounded-[5px] duration-500"
               rel="noopener noreferrer"
@@ -214,19 +224,19 @@ function Proyectos() {
             </a>
           </div>
         </div>
-        <div className=" w-[50%] h-[100%] absolute z-5 top-0 left-[6em] rounded-[5px] overflow-hidden">
-          <img
-            src={img_tucasaonline}
-            alt="Imagen de Proyecto TuCasaOnline"
-            className="w-full h-full object-fit-cover object-center"
-          />
-          <div className="absolute inset-0 bg-gradient-to-l from-[#051827] to-[#05182720] transition-opacity duration-500 group-hover:opacity-0"></div>
-        </div>
       </div>
 
-      <div className=" h-[25em] w-full relative flex-row group">
+      <div className=" h-auto md:h-auto lg:h-[25em] xl:h-[25em] w-full static md:static lg:relative xl:relative flex flex-col md:flex-col group justify-center items-center gap-1 md:gap-0 lg:gap-0 xl:gap-0 border-[#051827] border-2 rounded-[5px] shadow-[0px_0px_15px_rgb(0,0,0,0.3)] md:border-0 md:shadow-[0px_0px_0px_rgb(0,0,0,0.0)] lg:border-0 lg:shadow-[0px_0px_0px_rgb(0,0,0,0.0)]">
+        <div className="w-full h-[60%] md:w-[70%] md:h-[60%] lg:w-[50%] lg:h-[100%] xl:w-[50%] xl:h-[100%] static md:static lg:absolute xl:absolute z-5 md:top-0 md:right-[6em] lg:top-0 lg:right-[6em] xl:top-0 xl:right-[6em] rounded-[5px] overflow-hidden">
+          <img
+            src={img_portfolio}
+            alt="Imagen de Proyecto Portfolio"
+            className="w-full h-full object-fit-cover object-center"
+          />
+          <div className="static lg:absolute inset-0 bg-gradient-to-r from-[#051827] to-[#05182720] transition-opacity duration-500 group-hover:opacity-0"></div>
+        </div>
         <div
-          className="bg-[#e2e4e7] w-[45%] h-[82%] flex flex-col justify-evenly absolute z-10 top-[50%] translate-y-[-50%] left-[18em] rounded-xl shadow-[0px_0px_10px_rgb(0,0,0,0.5)]"
+          className="bg-[#e2e4e700] lg:bg-[#e2e4e7] xl:bg-[#e2e4e7] w-full h-auto md:w-[70%] md:h-auto lg:w-[50%] lg:h-auto xl:w-[45%] xl:h-[82%] flex flex-col justify-around md:static lg:absolute xl:absolute z-10 rounded-xl lg:top-[50%] lg:translate-y-[-50%] lg:left-[8em] lg:shadow-[0px_0px_10px_rgb(0,0,0,0.5)] xl:top-[50%] xl:translate-y-[-50%] xl:left-[18em] xl:shadow-[0px_0px_10px_rgb(0,0,0,0.5)]"
           style={{ padding: "0.5em 1em" }}
         >
           <h2
@@ -236,7 +246,7 @@ function Proyectos() {
             03 - Portfolio
           </h2>
           <p
-            className=" text-[#051827cd] text-[18px]"
+            className=" text-[#051827cd] text-[18px] text-justify"
             style={{ marginBottom: "8px" }}
           >
             {t("proyectos.portfolio")}
@@ -266,7 +276,7 @@ function Proyectos() {
           </div>
           <div className=" flex flex-row gap-4">
             <a
-              href="http://"
+              href="https://portfolio-blue-tau-52.vercel.app/"
               target="_blank"
               className=" w-9 h-9 flex justify-center text-[#051827] items-center hover:shadow-[0px_0px_10px_rgb(0,0,0,0.25)] transition-all rounded-[5px] duration-500"
               rel="noopener noreferrer"
@@ -275,7 +285,7 @@ function Proyectos() {
             </a>
 
             <a
-              href="http://"
+              href="https://github.com/glaginestra/Portfolio"
               target="_blank"
               className=" w-9 h-9 flex justify-center text-[#051827] items-center hover:shadow-[0px_0px_10px_rgb(0,0,0,0.25)] transition-all rounded-[5px] duration-500"
               rel="noopener noreferrer"
@@ -284,19 +294,18 @@ function Proyectos() {
             </a>
           </div>
         </div>
-        <div className=" w-[50%] h-[100%] absolute z-5 top-0 right-[6em] rounded-[5px] overflow-hidden">
+      </div>
+      <div className=" h-auto md:h-auto lg:h-[25em] xl:h-[25em] w-full static md:static lg:relative xl:relative flex flex-col md:flex-col group justify-center items-center gap-1 md:gap-0 lg:gap-0 xl:gap-0 border-[#051827] border-2 rounded-[5px] shadow-[0px_0px_15px_rgb(0,0,0,0.3)] md:border-0 md:shadow-[0px_0px_0px_rgb(0,0,0,0.0)] lg:border-0 lg:shadow-[0px_0px_0px_rgb(0,0,0,0.0)]">
+        <div className="w-full h-[60%] md:w-[70%] md:h-[60%] lg:w-[50%] lg:h-[100%] xl:w-[50%] xl:h-[100%] static md:static lg:absolute xl:absolute z-5 md:top-0 md:left-[6em] lg:top-0 lg:left-[6em] xl:top-0 xl:left-[6em] rounded-[5px] overflow-hidden">
           <img
-            src={img_portfolio}
-            alt="Imagen de Proyecto Portfolio"
+            src={img_remodelacion}
+            alt="Imagen de Proyecto TuCasaOnline"
             className="w-full h-full object-fit-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#051827] to-[#05182720] transition-opacity duration-500 group-hover:opacity-0"></div>
+          <div className="static lg:absolute inset-0 bg-gradient-to-l from-[#051827] to-[#05182720] transition-opacity duration-500 group-hover:opacity-0"></div>
         </div>
-      </div>
-
-      <div className=" h-[25em] w-full relative flex-row group">
         <div
-          className="bg-[#e2e4e7] w-[45%] h-[82%] flex flex-col justify-evenly absolute z-10 top-[50%] translate-y-[-50%] right-[18em] rounded-xl shadow-[0px_0px_10px_rgb(0,0,0,0.5)]"
+          className="bg-[#e2e4e700] lg:bg-[#e2e4e7] xl:bg-[#e2e4e7] w-full h-auto md:w-[70%] md:h-auto lg:w-[50%] lg:h-auto xl:w-[45%] xl:h-[82%] flex flex-col justify-around md:static lg:absolute xl:absolute z-10 rounded-xl  lg:top-[50%] lg:translate-y-[-50%] lg:right-[8em] lg:shadow-[0px_0px_10px_rgb(0,0,0,0.5)] xl:top-[50%] xl:translate-y-[-50%] xl:right-[18em] xl:shadow-[0px_0px_10px_rgb(0,0,0,0.5)]"
           style={{ padding: "0.5em 1em" }}
         >
           <h2
@@ -355,19 +364,19 @@ function Proyectos() {
             </a>
           </div>
         </div>
-        <div className=" w-[50%] h-[100%] absolute z-5 top-0 left-[6em] rounded-[5px] overflow-hidden">
-          <img
-            src={img_remodelacion}
-            alt="Imagen de Proyecto TuCasaOnline"
-            className="w-full h-full object-fit-cover object-center"
-          />
-          <div className="absolute inset-0 bg-gradient-to-l from-[#051827] to-[#05182720] transition-opacity duration-500 group-hover:opacity-0"></div>
-        </div>
       </div>
 
-      <div className=" h-[25em] w-full relative flex-row group">
+      <div className="h-auto md:h-auto lg:h-[25em] xl:h-[25em] w-full static md:static lg:relative xl:relative flex flex-col md:flex-col group justify-center items-center gap-1 md:gap-0 lg:gap-0 xl:gap-0 border-[#051827] border-2 rounded-[5px] shadow-[0px_0px_15px_rgb(0,0,0,0.3)] md:border-0 md:shadow-[0px_0px_0px_rgb(0,0,0,0.0)] lg:border-0 lg:shadow-[0px_0px_0px_rgb(0,0,0,0.0)]">
+        <div className="w-full h-[60%] md:w-[70%] md:h-[60%] lg:w-[50%] lg:h-[100%] xl:w-[50%] xl:h-[100%] static md:static lg:absolute xl:absolute z-5 md:top-0 md:right-[6em] lg:top-0 lg:right-[6em] xl:top-0 xl:right-[6em] rounded-[5px] overflow-hidden">
+          <img
+            src={img_subway}
+            alt="Imagen de Proyecto Subway"
+            className="w-full h-full object-fit-cover object-center"
+          />
+          <div className="static lg:absolute inset-0 bg-gradient-to-r from-[#051827] to-[#05182720] transition-opacity duration-500 group-hover:opacity-0"></div>
+        </div>
         <div
-          className="bg-[#e2e4e7] w-[45%] h-[82%] flex flex-col justify-evenly absolute z-10 top-[50%] translate-y-[-50%] left-[18em] rounded-xl shadow-[0px_0px_10px_rgb(0,0,0,0.5)]"
+          className="bg-[#e2e4e700] lg:bg-[#e2e4e7] xl:bg-[#e2e4e7] w-full h-auto md:w-[70%] md:h-auto lg:w-[50%] lg:h-auto xl:w-[45%] xl:h-[82%] flex flex-col justify-around md:static lg:absolute xl:absolute z-10 rounded-xl  lg:top-[50%] lg:translate-y-[-50%] lg:left-[8em] lg:shadow-[0px_0px_10px_rgb(0,0,0,0.5)] xl:top-[50%] xl:translate-y-[-50%] xl:left-[18em] xl:shadow-[0px_0px_10px_rgb(0,0,0,0.5)]"
           style={{ padding: "0.5em 1em" }}
         >
           <h2
@@ -431,19 +440,19 @@ function Proyectos() {
             </a>
           </div>
         </div>
-        <div className=" w-[50%] h-[100%] absolute z-5 top-0 right-[6em] rounded-[5px] overflow-hidden">
-          <img
-            src={img_subway}
-            alt="Imagen de Proyecto Portfolio"
-            className="w-full h-full object-fit-cover object-center"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#051827] to-[#05182720] transition-opacity duration-500 group-hover:opacity-0"></div>
-        </div>
       </div>
 
-      <div className=" h-[25em] w-full relative flex-row group">
+      <div className=" h-auto md:h-auto lg:h-[25em] xl:h-[25em] w-full static md:static lg:relative xl:relative flex flex-col md:flex-col group justify-center items-center gap-1 md:gap-0 lg:gap-0 xl:gap-0 border-[#051827] border-2 rounded-[5px] shadow-[0px_0px_15px_rgb(0,0,0,0.3)] md:border-0 md:shadow-[0px_0px_0px_rgb(0,0,0,0.0)] lg:border-0 lg:shadow-[0px_0px_0px_rgb(0,0,0,0.0)]">
+        <div className="w-full h-[60%] md:w-[70%] md:h-[60%] lg:w-[50%] lg:h-[100%] xl:w-[50%] xl:h-[100%] static md:static lg:absolute xl:absolute z-5 md:top-0 md:left-[6em] lg:top-0 lg:left-[6em] xl:top-0 xl:left-[6em] rounded-[5px] overflow-hidden">
+          <img
+            src={img_spotify}
+            alt="Imagen de Proyecto Spotify"
+            className="w-full h-full object-fit-cover object-center"
+          />
+          <div className="static lg:absolute inset-0 bg-gradient-to-l from-[#051827] to-[#05182720] transition-opacity duration-500 group-hover:opacity-0"></div>
+        </div>
         <div
-          className="bg-[#e2e4e7] w-[45%] h-[82%] flex flex-col justify-evenly absolute z-10 top-[50%] translate-y-[-50%] right-[18em] rounded-xl shadow-[0px_0px_10px_rgb(0,0,0,0.5)]"
+          className="bg-[#e2e4e700] lg:bg-[#e2e4e7] xl:bg-[#e2e4e7] w-full h-auto md:w-[70%] md:h-auto lg:w-[50%] lg:h-auto xl:w-[45%] xl:h-[82%] flex flex-col justify-around md:static lg:absolute xl:absolute z-10 rounded-xl  lg:top-[50%] lg:translate-y-[-50%] lg:right-[8em] lg:shadow-[0px_0px_10px_rgb(0,0,0,0.5)] xl:top-[50%] xl:translate-y-[-50%] xl:right-[18em] xl:shadow-[0px_0px_10px_rgb(0,0,0,0.5)]"
           style={{ padding: "0.5em 1em" }}
         >
           <h2
@@ -508,19 +517,19 @@ function Proyectos() {
             </a>
           </div>
         </div>
-        <div className=" w-[50%] h-[100%] absolute z-5 top-0 left-[6em] rounded-[5px] overflow-hidden">
-          <img
-            src={img_spotify}
-            alt="Imagen de Proyecto TuCasaOnline"
-            className="w-full h-full object-fit-cover object-center"
-          />
-          <div className="absolute inset-0 bg-gradient-to-l from-[#051827] to-[#05182720] transition-opacity duration-500 group-hover:opacity-0"></div>
-        </div>
       </div>
 
-      <div className=" h-[25em] w-full relative flex-row group">
+      <div className=" h-auto md:h-auto lg:h-[25em] xl:h-[25em] w-full static md:static lg:relative xl:relative flex flex-col md:flex-col group justify-center items-center gap-1 md:gap-0 lg:gap-0 xl:gap-0 border-[#051827] border-2 rounded-[5px] shadow-[0px_0px_15px_rgb(0,0,0,0.3)] md:border-0 md:shadow-[0px_0px_0px_rgb(0,0,0,0.0)] lg:border-0 lg:shadow-[0px_0px_0px_rgb(0,0,0,0.0)]">
+        <div className="w-full h-[60%] md:w-[70%] md:h-[60%] lg:w-[50%] lg:h-[100%] xl:w-[50%] xl:h-[100%] static md:static lg:absolute xl:absolute z-5 md:top-0 md:right-[6em] lg:top-0 lg:right-[6em] xl:top-0 xl:right-[6em] rounded-[5px] overflow-hidden">
+          <img
+            src={img_blog}
+            alt="Imagen de Proyecto Portfolio"
+            className="w-full h-full object-fit-cover object-center"
+          />
+          <div className="static lg:absolute inset-0 bg-gradient-to-r from-[#051827] to-[#05182720] transition-opacity duration-500 group-hover:opacity-0"></div>
+        </div>
         <div
-          className="bg-[#e2e4e7] w-[45%] h-[82%] flex flex-col justify-evenly absolute z-10 top-[50%] translate-y-[-50%] left-[18em] rounded-xl shadow-[0px_0px_10px_rgb(0,0,0,0.5)]"
+          className="bg-[#e2e4e700] lg:bg-[#e2e4e7] xl:bg-[#e2e4e7] w-full h-auto md:w-[70%] md:h-auto lg:w-[50%] lg:h-auto xl:w-[45%] xl:h-[82%] flex flex-col justify-around md:static lg:absolute xl:absolute z-10 rounded-xl lg:top-[50%] lg:translate-y-[-50%] lg:left-[8em] lg:shadow-[0px_0px_10px_rgb(0,0,0,0.5)] xl:top-[50%] xl:translate-y-[-50%] xl:left-[18em] xl:shadow-[0px_0px_10px_rgb(0,0,0,0.5)]"
           style={{ padding: "0.5em 1em" }}
         >
           <h2
@@ -578,14 +587,6 @@ function Proyectos() {
             </a>
           </div>
         </div>
-        <div className=" w-[50%] h-[100%] absolute z-5 top-0 right-[6em] rounded-[5px] overflow-hidden">
-          <img
-            src={img_blog}
-            alt="Imagen de Proyecto Portfolio"
-            className="w-full h-full object-fit-cover object-center"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#051827] to-[#05182720] transition-opacity duration-500 group-hover:opacity-0"></div>
-        </div>
       </div>
       <div className="w-[100%] h-[5em] flex flex-col justify-center items-center">
         <Link to="/">
@@ -598,4 +599,4 @@ function Proyectos() {
   );
 }
 
-export default Proyectos;
+export default BodyProjects;
